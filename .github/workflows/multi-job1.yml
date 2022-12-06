@@ -1,7 +1,7 @@
 name: multi-job
 on: push
 jobs:
-  lint:
+ lint:
   runs-on: ubuntu-latest
   steps:
    - name: Get-Code
