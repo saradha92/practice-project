@@ -1,11 +1,13 @@
 name: output-issues
-on: issues
+on: 
+ issues:
+  branches: ["master"]
 jobs: 
  output-issues:
   runs-on: ubuntu-latest
   steps:
    - name: output the issues
-     run: echo "${{ toJSON(github) }}"
+     run: echo "${{toJSON(github)}}"
    - name: test
      run: cat output-issues
      
