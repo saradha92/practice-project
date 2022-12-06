@@ -1,7 +1,7 @@
 name: output-issues
 on: 
  issues:
-  branches: ["main"]
+  branches: ["master"]
 jobs: 
  output-issues:
   runs-on: ubuntu-latest
