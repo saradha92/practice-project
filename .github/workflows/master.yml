@@ -14,6 +14,8 @@ jobs:
   steps:
    - name: Install Dependencies
      uses: actions/setup-node@v3
+   - name: install dependcies
+     run: npm ci
  Build:
   needs: test
   runs-on: ubuntu-latest
