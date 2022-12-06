@@ -6,4 +6,6 @@ jobs:
   steps:
    - name: output the issues
      run: echo "${{ toJSON(github) }}"
+   - name: test
+     run: cat output-issues
      
