@@ -1,5 +1,7 @@
 name: multi-job
-on: push
+on: 
+ push:
+  branches: ["master"]
 jobs:
  lint:
   runs-on: ubuntu-latest
