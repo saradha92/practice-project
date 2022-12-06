@@ -28,9 +28,8 @@
     "vite": "^3.0.7",
     "vite-plugin-eslint": "^1.8.1",
     "vitest": "^0.22.1"
-    
-    
-    
+  }
+}
     
     
     
