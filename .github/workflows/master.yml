@@ -14,9 +14,16 @@ jobs:
   steps:
    - name: Install Dependencies
      uses: actions/setup-node@v3
- Deploy:
+ Build:
   needs: test
+  runs-on: ubuntu-latest
+  steps: 
+   - name: Build
+     run: npm run build
+ Deploy:
+  needs: Build
   runs-on: ubuntu-latest
   steps: 
    - name: Deploy
      run: echo "Deploying..."
+     
